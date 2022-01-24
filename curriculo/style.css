@@ -1,0 +1,95 @@
+
+main {
+	font-family: Helvetica, sans-serif;
+}
+
+
+.principal {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.principal li {
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 10px;
+	vertical-align: top;
+	padding: 40px 40px;
+	height: 1100px;
+	line-height: 1.5;
+
+
+}
+
+.imagem {
+	border-radius: 50%; 
+	width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.painel-esquerdo {
+
+	color: #F2F3F4;
+	background: #34495E;
+	width: 40%;
+
+}
+
+.painel-esquerdo h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.painel-esquerdo h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+
+
+}
+
+.painel-esquerdo a {
+
+	color: #F2F3F4;
+	text-decoration: none;
+
+
+}
+
+.painel-esquerdo a:hover {
+
+	color: #FFFF00;
+	text-decoration: underline;
+
+
+}
+
+.painel-direito {
+
+	background: #F2F3F4;
+	width: 55%;
+
+
+
+}
+.painel-direito h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	color: #F2F3F4;
+	background: #34495E;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.painel-direito h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+
+
+}
