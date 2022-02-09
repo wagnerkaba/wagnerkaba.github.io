@@ -7,19 +7,25 @@ main {
 
 .principal {
 	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+	align-content: center;
+	margin-top: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+
+
+
+	padding: 1.5rem 0;
 	
 }
 
 .principal li {
 	display: inline-block;
 	box-sizing: border-box;
-	border-radius: 10px;
+	border-radius: 1rem;
 	vertical-align: top;
-	padding: 40px 40px;
-	height: 1100px;
-	line-height: 1.5;
+	padding: 4rem 3rem;
+	height: 70rem;
+	line-height: 1.5rem;
 
 
 }
@@ -44,13 +50,13 @@ main {
 .painel-esquerdo h1 {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 2rem;
 }
 
 .painel-esquerdo h2 {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1.5rem;
 
 
 }
@@ -74,7 +80,7 @@ main {
 .painel-direito {
 
 	background: #F2F3F4;
-	width: 55%;
+	width: 58%;
 
 
 
@@ -82,11 +88,11 @@ main {
 .painel-direito h2 {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1.5rem;
 	color: #F2F3F4;
 	background: #34495E;
-	padding: 10px;
-	border-radius: 5px;
+	padding: 1rem;
+	border-radius: 1rem;
 }
 
 .painel-direito h3 {
@@ -96,18 +102,30 @@ main {
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
+
+	.principal {
+		width: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		align-content: center;
+	}
+
+	.principal li {
+		height: auto;
+
+	}
 
 	.painel-direito {
 
-		width: 90%;
+		width: 100%;
 	
 	
 	
 	}
 
 	.painel-esquerdo {
-		width: 90%;
+		width: 100%;
 	
 	}
 
