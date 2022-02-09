@@ -1,5 +1,5 @@
-# Projetos utilizando HTML + CSS
+# Projetos utilizando HTML + CSS + Javascript
 
-* [Currículo]([WAGNER KABA](https://wagnerkaba.github.io/curriculo/)) (atualizado com design responsivo)
-* [Projeto Apeperia]([Home | Apeperia](https://wagnerkaba.github.io/apeperia/index.html)) 
+* [Currículo](https://wagnerkaba.github.io/curriculo/) (atualizado com design responsivo)
+* [Projeto Apeperia](https://wagnerkaba.github.io/apeperia/index.html) 
 * Barbearia Alura
