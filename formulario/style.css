@@ -9,7 +9,7 @@ body {
 
 .main-cadastro {
 	position: relative;
-	margin: 3rem 0 0 0;
+	margin: 3rem 0 3rem 0;
 
 	/* Em celulares, o tamanho deve ser 90% */
 	width: 90%;
