@@ -10,7 +10,12 @@ body {
 .main-cadastro {
 	position: relative;
 	margin: 3rem 0 0 0;
-	width: 450px;
+
+	/* Em celulares, o tamanho deve ser 90% */
+	width: 90%;
+	
+	/* Em telas maiores, o tamanho máximo deve ser 450px */
+	max-width: 450px;
 	height: auto;
 	background: #FEFEFE;
 	border-radius: 0.5rem;
@@ -42,6 +47,7 @@ body {
 	margin: 0.5rem 0 1rem;
 	padding: 0.8rem;
 	width: 93%;
+	border: 1px solid silver;
 	border-radius: 0.4rem;
 }
 
@@ -65,10 +71,13 @@ body {
 	transform: scale(1.1);
 }
 
-.formulario #erro_email,
-.formulario #erro_senha{
-	margin: 0 0 2rem 0;
-	width: 80%;
+
+	#erro_nome, #erro_nome_letras, 
+	#erro_email, 
+	#erro_senha, 
+	#erro_telefone {
+	margin: 0 0 1rem 0;
+	width: 90%;
 	color: #C62828;
 	background: rgba(255,0,0,0.1);
 	text-align: center;
@@ -78,8 +87,10 @@ body {
 	display: none;
 }
 
-@media screen and (max-width:480px){
-	.main-cadastro {
-		width: 90%;
-	}
+.formulario li, .formulario p {
+	list-style-type: disc;
+	list-style-position:inside;
+	padding: 0.2rem;
+	
 }
+
