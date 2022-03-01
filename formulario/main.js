@@ -69,7 +69,7 @@ function verificaSenha() {
 }
 
 // Verifica se o valor do campo input está de acordo com uma expresão regular
-// Se não estiver de acordo, torna visivel o container com a mensagem de erro
+// Se não estiver de acordo, torna visivel o container com a mensagem de erro e coloca o foco no campo input
 function validar(campoInput, expressaoRegular, containerErro) {
 
     if (campoInput.value.match(expressaoRegular)) {

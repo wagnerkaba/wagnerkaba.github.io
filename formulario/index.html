@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title> Cadastro</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<head>
+	<meta charset="utf-8">
+	<title> Cadastro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 
-	</head>
-	<body>
+</head>
 
-		<main class="main-cadastro">
+<body>
 
-			<h1 class = "titulo">Cadastro</h1>
+	<main class="main-cadastro">
 
-			<!-- Criei um backend utilizando EC2 da AWS. O endereço http://3.84.10.222:3333/ recebe os dados do formulário e confirma para o usuário  -->
+		<h1 class="titulo">Cadastro</h1>
 
-			<form class="formulario" action="http://3.84.10.222:3333/" method="POST" name="formulario" onsubmit="return validaAoEnviar()">
-				<label for="nome">Nome</label>
-				<input type="text" id="nome" name="nome" class="input-padrao" required>
-				<div id="erro_nome">
-					<p>Digite seu nome</p>
-					<ul>
-						<li>Utilize apenas letras e espaços</li>
-						<li>Mínimo de 6 caracteres</li>
-					</ul>
-				</div>
+		<!-- Criei um backend simples (só para praticar) utilizando EC2 da AWS.  -->
+		<!-- O endereço recebe os dados do formulário e confirma para o usuário  -->
+		<!-- O github do backend é: https://github.com/wagnerkaba/nodejs-api -->
+		<form class="formulario" action="http://ec2-3-84-10-222.compute-1.amazonaws.com:3333/" method="POST" name="formulario" onsubmit="return validaAoEnviar()">
 
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" class="input-padrao" required placeholder="email@dominio.com">
-				<div id="erro_email">Digite um email válido</div>
+			<label for="nome">Nome</label>
+			<input type="text" id="nome" name="nome" class="input-padrao" required>
+			<div id="erro_nome">
+				<p>Digite seu nome</p>
+				<ul>
+					<li>Utilize apenas letras e espaços</li>
+					<li>Mínimo de 6 caracteres</li>
+				</ul>
+			</div>
 
-				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" name="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-				<div id="erro_telefone">Digite um telefone válido</div>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" class="input-padrao" required placeholder="email@dominio.com">
+			<div id="erro_email">Digite um email válido</div>
 
-				<label for="senha">Senha</label>
-				<input type="password" id="senha" name="senha" class="input-padrao" required>
-				<div id="erro_senha">
-					<p>Digite uma senha com 8 a 15 caracteres</p> 
-					<p>A senha deve conter ao menos:</p>
-					
-					<ul>
-						<li>uma letra minúscula;</li>
-						<li>uma letra maiúscula;</li>
-						<li>um número;</li>
-						<li>um caracter especial.</li>
-					</ul>
-				</div>
-				
-				<label class="checkbox"><input type="checkbox" name="checkbox" checked>Quero receber novidades por email</label>
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" name="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+			<div id="erro_telefone">Digite um telefone válido</div>
 
-				<input type="submit" value="Enviar formulário" class="enviar">
-			</form>
+			<label for="senha">Senha</label>
+			<input type="password" id="senha" name="senha" class="input-padrao" required>
+			<div id="erro_senha">
+				<p>Digite uma senha com 8 a 15 caracteres</p>
+				<p>A senha deve conter ao menos:</p>
+
+				<ul>
+					<li>uma letra minúscula;</li>
+					<li>uma letra maiúscula;</li>
+					<li>um número;</li>
+					<li>um caracter especial.</li>
+				</ul>
+			</div>
 
 
-		</main>
+			<input type="submit" value="Enviar formulário" class="enviar">
+		</form>
 
-		<script src="main.js"></script>
-	</body>
+
+	</main>
+
+	<script src="main.js"></script>
+</body>
 
 
 
