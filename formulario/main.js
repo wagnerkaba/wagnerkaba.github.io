@@ -77,6 +77,8 @@ function validar(campoInput, expressaoRegular, containerErro) {
         return true;
     } else {
         containerErro.style.display = "block";
+
+        //se o botão "enviar" é clicado e existe algum campo a ser corrigido, é preciso colocar o foco nesse campo.
         campoInput.focus();
         return false;
     }
