@@ -1,46 +1,42 @@
-
-main {
+body {
 	font-family: Helvetica, sans-serif;
 	
 }
 
-
 .principal {
+	margin: auto;
 	width: 940px;
-	align-content: center;
-	margin-top: 1rem;
-	margin-left: auto;
-	margin-right: auto;
-
-
-
-	padding: 1.5rem 0;
+	padding: 1rem;
 	
 }
 
-.principal li {
+.painel {
+
+	margin: auto;
 	display: inline-block;
 	box-sizing: border-box;
 	border-radius: 1rem;
 	vertical-align: top;
 	padding: 4rem 3rem;
-	height: 67rem;
 	line-height: 1.5rem;
+	height: 63rem;
+}
 
+.painel p {
+	margin: 0 0 1em;
+	
 
 }
 
 .imagem {
 	border-radius: 50%; 
 	width: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  	display: block;
+  	margin: auto;
 }
 
 
 .painel-esquerdo {
-
 	color: #F2F3F4;
 	background: #34495E;
 	width: 40%;
@@ -52,16 +48,14 @@ main {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 2rem;
-	margin-top: 3rem;
-	margin-bottom: 2rem;
+	margin: 1em 0 1em;
 }
 
 .painel-esquerdo h2 {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.5rem;
-	margin-top: 3rem;
-	margin-bottom: 1rem;
+	margin: 1.5em 0 0.5em;
 
 
 }
@@ -70,7 +64,6 @@ main {
 
 	color: #F2F3F4;
 	text-decoration: none;
-
 
 }
 
@@ -82,8 +75,12 @@ main {
 
 }
 
-.painel-direito {
+.habilidades {
+	list-style-type: disc;
+}
 
+
+.painel-direito {
 	background: #F2F3F4;
 	width: 58%;
 	box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.8);
@@ -99,51 +96,37 @@ main {
 	background: #34495E;
 	padding: 1rem;
 	border-radius: 1rem;
-	margin-top: 3rem;
-	margin-bottom: 1rem;
+	margin: 3rem 0 1rem;
 }
 
 
 
-.painel-direito h3 {
-
-	margin-top: 2rem;
+.painel-direito strong {
+	margin:2em 1em 0 auto;
 	text-transform: uppercase;
 	font-weight: bold;
-
-
 }
 
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:980px) {
 
 	.principal {
 		width: auto;
-		margin-left: 5%;
-		margin-right: 5%;
-		align-content: center;
+		max-width:500px;
+		margin: auto auto;
 	}
 
-	.principal li {
+	.painel {
+		display: block;
 		height: auto;
 
 	}
 
 	.painel-direito {
-
 		width: 100%;
-	
-	
-	
 	}
 
 	.painel-esquerdo {
 		width: 100%;
-		
-	
 	}
-
-	.principal li {
-		display: block;
-	}
-	
 }
