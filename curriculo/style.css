@@ -12,20 +12,16 @@ body {
 }
 
 .painel {
-
-	margin: auto;
-	box-sizing: border-box;
 	border-radius: 1rem;
-	vertical-align: top;
 	padding: 4rem 3rem;
 	line-height: 1.5rem;
-	height: 63rem;
+	box-sizing: border-box;
+	
 }
 
 .painel p {
 	margin: 0 0 1em;
 	
-
 }
 
 .imagem {
@@ -85,8 +81,6 @@ body {
 	width: 60%;
 	box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.8);
 
-
-
 }
 .painel-direito h2 {
 	text-transform: uppercase;
@@ -113,15 +107,11 @@ body {
 	.principal {
 		width: auto;
 		max-width:500px;
-		margin: auto auto;
 		display: block;
 
 	}
 
-	.painel {
-		height: auto;
 
-	}
 
 	.painel-direito {
 		width: 100%;
