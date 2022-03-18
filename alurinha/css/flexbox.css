@@ -1,0 +1,157 @@
+/* Arquivo criado para não misturar o código do flexbox com o código de estilo geral  */
+
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    /*substitui flex-direction e flex-wrap*/
+    height: 260px;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+
+}
+
+
+
+/* Código para retirar as margens direitas dos elementos da quarta coluna */
+/* The :nth-child() CSS pseudo-class matches elements based on their position among a group of siblings. */
+/* Selects every fourth element among any group of siblings */
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* Código para retirar as margens esquerda dos elementos da primeira coluna */
+/* nth-child(4n+1) REPRESENTA:
+1 (ou seja 4*0+1)
+5 (ou seja 4*1+1)
+9 (ou seja 4*2+1
+etc. */
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    /* flex-grow specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor). */
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    /* usamos flex-shrink para fazer com que o video seja reduzido 2x mais do que o container do lado que contém texto */
+    flex-shrink: 2;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+/* DESIGN MOBILE */
+/* ++++++++++++++++++++++++++++++++++ */
+
+@media (max-width:768px) {
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        margin: 0;
+        width: 80%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+
+    .cabecalhoPrincipal-nav-link-app{
+        /* Como fazer para que no mobile, o link "Nosso App" apareça primeiro no menu? */
+        /* "order:-1" Faz com que o elemento apareça em primeiro lugar */
+        /* Isso porque os elementos por padrão são: "order:0" */
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+}

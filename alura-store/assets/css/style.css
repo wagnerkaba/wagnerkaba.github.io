@@ -1,0 +1,48 @@
+.app {
+    background: #f1f1f1;
+    /* avisa o body para se comportar como grid */
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* o grid terá três areas: cabecalho, conteudo e rodape */
+    grid-template-areas:
+        "cabecalho"
+        "conteudo"
+        "rodape";
+
+    /* tamanho das colunas do grid é automático */
+    grid-template-columns: auto;
+
+    /* tamanho do row do "cabecalho" é 50 px */
+    /* tamanho do row do "conteudo" é 100vh (ocupa todo espaço da tela) */
+    /* tamanho do row do "rodape" é automatico */
+    grid-template-rows: 50px auto auto;
+}
+
+.cabecalho {
+    /* avisa o css que este é o "cabecalho" indicado em "grid-template-areas" */
+    grid-area: cabecalho;
+
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.conteudo {
+    /* avisa o css que este é o "conteudo" indicado em "grid-template-areas" */
+    grid-area: conteudo;
+    padding: 0 2rem;
+
+}
+
+.rodape {
+    /* avisa o css que este é o "rodape" indicado em "grid-template-areas" */
+    grid-area: rodape;
+
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
+}
