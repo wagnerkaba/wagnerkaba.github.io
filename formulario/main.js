@@ -16,7 +16,7 @@ inputSenha.addEventListener('input', verificaSenha);
 
 function validaAoEnviar(event) {
     
-    if (!verificaNome() && !verificaEmail() && !verificaTelefone() && !verificaSenha()){
+    if (!verificaNome() || !verificaEmail() || !verificaTelefone() || !verificaSenha()){
 
         //se houver alguma falha na validação, preventDefault() impede que o formulario seja enviado.
         event.preventDefault();
