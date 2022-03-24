@@ -14,9 +14,13 @@ inputEmail.addEventListener('input', verificaEmail);
 inputTelefone.addEventListener('input', verificaTelefone);
 inputSenha.addEventListener('input', verificaSenha);
 
-function validaAoEnviar() {
+function validaAoEnviar(event) {
+    
+    if (!verificaNome() && !verificaEmail() && !verificaTelefone() && !verificaSenha()){
 
-    return (verificaNome() && verificaEmail() && verificaTelefone() && verificaSenha());
+        //se houver alguma falha na validação, preventDefault() impede que o formulario seja enviado.
+        event.preventDefault();
+    }
 
 }
 

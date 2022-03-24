@@ -18,10 +18,12 @@
 
 		<h1 class="titulo">Cadastro</h1>
 
-		<!-- Criei um backend simples (só para praticar) utilizando EC2 da AWS.  -->
-		<!-- O endereço recebe os dados do formulário e confirma para o usuário  -->
-		<!-- O github do backend é: https://github.com/wagnerkaba/nodejs-api -->
-		<form class="formulario" action="http://ec2-3-84-10-222.compute-1.amazonaws.com:3333/" method="POST" name="formulario" onsubmit="return validaAoEnviar()">
+		<!-- NOVALIDATE: Indicate that the form is not to be validated on submit  -->
+		<form novalidate class="formulario" action="http://ec2-3-84-10-222.compute-1.amazonaws.com:3333/" method="POST"
+			name="formulario" onsubmit="validaAoEnviar(event)">¨
+			<!-- Criei um backend simples (só para praticar) utilizando EC2 da AWS.  -->
+			<!-- O endereço recebe os dados do formulário e confirma para o usuário  -->
+			<!-- O github do backend é: https://github.com/wagnerkaba/nodejs-api -->
 
 			<label for="nome">Nome</label>
 			<input type="text" id="nome" name="nome" class="input-padrao" required>
