@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Envie mensagens sem adicionar o contato</title>
+    <link rel="icon" type="image/svg" href="./wpp.svg">
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Digite DDD + Telefone</p>
+    <form>
+        <input name="phone" type="text" id="phone">
+        <button>Enviar</button>
+
+    </form>
+
+    <script>
+
+        const form = document.getElementsByTagName('form')[0];
+
+        const fone = document.getElementById('phone');
+
+        form.addEventListener('submit', function (event) {
+
+            event.preventDefault();
+
+            const texto = fone.value;
+
+            // Regex para eliminar caracteres que não sejam números
+            //\D matches a character that is not a numerical digit. So any non digit is replaced by an empty string. The result is only the digits in a string.
+            //The g at the end of the regular expression literal is for "global" meaning that it replaces all matches, and not just the first.
+            const telefone = texto.replace(/\D/g, "");
+
+            window.location.href = "https://api.whatsapp.com/send?phone=55" + telefone;
+
+        });
+
+    </script>
+</body>
+
+</html>
